@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <link rel="icon" href="/Image/iceSemFundo.png">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Checkout IceGourmet</title>
+
+  <link rel="stylesheet" href="stylesPagt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <header>
+<a href="/index.html">
+    <button type="button" class="box">Catalago</button>
+  </a>
+    <img src="Image/iceSemFundo.png" alt="">
+    <button type="button" class="box">Cadastrar</button>
+
+  </header>
+
+  <main>
+
+    <form action="#" method="post">
+
+      <section class="orderSection">
+
+        <div class="orderWrapper">
+
+          <div class="orderSummary">
+            <h3>Seu Pedido</h3>
+            <table>
+              <tr>
+                <th>Itens</th>
+                <th>Preço</th>
+                <th>Entrega</th>
+              </tr>
+              <tr>
+                <td>2 </td>
+
+                <td>$ 696.06</td>
+                <td>48 Horas*</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="orderButtons">
+            <input type="submit" class="box" name="placeOrder" value="Faça o Pedido">
+            <button class="box printButton" type="button">Comprovante</button>
+          </div>
+
+        </div>
+
+        <div class="helpCenter">
+          <h3>Central de ajuda IceGourmet</h3>
+          <p>Se você precisar de ajuda ao fazer seu pedido, entre em contato com um de nossos queridos Gerentes de
+            Projeto por telefone ou e-mail.</p>
+          <address>
+            <a href="tel:+971(0)555555">+99 999-9999</a>
+            <a href="mailto:help@qtest.com">help@IceGourmet.com</a>
+          </address>
+        </div>
+
+      </section>
+
+      <fieldset class="signUp">
+
+        <h2>Insira seu Endereço</h2>
+        <p>
+          <label for="name">Estado</label>
+          <select class="box" name="paises" id="paises">
+            <option value="Brasil" selected="selected">Brasilia</option>
+            <option value="SP">São Paulo </option>
+        </p>
+        
+
+        </select>
+        <div class="personalInfo">
+
+
+          <p>
+            <label for="name">Endereço Completo</label>
+            <input type="text" name="name" class="box" id="name" pattern="[A-Za-z' -]+" minlength="2" maxlength="50"
+              required placeholder=" ">
+          </p>
+
+          <p>
+            <label for="email">Completento</label>
+            <input type="email" name="email" class="box" id="email" pattern=""
+              required placeholder=" ">
+          </p>
+
+          <p>
+            <label for="password">Numero</label>
+            <input type="number" name="password" class="box" id="password" required
+              pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              placeholder=" ">
+          </p>
+
+        </div>
+
+        <div class="choicesWrapper paymentType">
+
+          <input type="radio" id="visa" name="payment" value="visa" required>
+          <label for="visa" class="box"></label>
+
+          <input type="radio" id="payPal" name="payment" value="payPal">
+          <label for="payPal" class="box"></label>
+
+          <input type="radio" id="amazon" name="payment" value="amazon">
+          <label for="amazon" class="box"></label>
+
+        </div>
+
+        <div class="choicesWrapper paymentInfo">
+
+          <p>
+            <label for="number">Numero do cartão</label>
+            <input type="text" name="cardNumber" class="box" id="number" pattern="[0-9]{16}" required>
+          </p>
+
+          <p>
+            <label for="date">Data de expiração</label>
+            <input type="date" name="expiryDate" class="box" id="date" required>
+          </p>
+
+          <p>
+            <label for="code">Codigo</label>
+            <input type="text" name="code" class="box" id="code" pattern="[0-9]{3}" required>
+          </p>
+
+        </div>
+
+      </fieldset>
+
+      <div class="summingWrapper">
+
+        <input type="checkbox" name="agreement" value="agree" id="agreement" required>
+        <label for="agreement">Eu aceito os termos da IceGourmet <a href="#">Termos &amp; Condiçoes</a></label>
+
+        <input type="submit" class="box" name="placeOrder" value="Faça O pedido">
+
+
+      </div>
+
+    </form>
+
+  </main>
+
+  
+</body>
+
+</html>
